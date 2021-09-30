@@ -13,7 +13,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first int is greater than the second
         /// int. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -27,7 +26,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first int is greater than the second
         /// int. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -43,7 +41,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -58,7 +55,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -75,7 +71,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -89,7 +84,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -105,7 +99,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -120,7 +113,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -137,7 +129,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -151,7 +142,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -167,7 +157,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -181,7 +170,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -197,7 +185,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -211,7 +198,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -227,7 +213,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -241,7 +226,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -261,7 +245,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -275,7 +258,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -291,7 +273,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -306,7 +287,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -323,7 +303,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -337,7 +316,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -353,7 +331,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -368,7 +345,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -385,7 +361,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -399,7 +374,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -415,7 +389,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -429,7 +402,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -445,7 +417,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -459,7 +430,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -475,7 +445,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -489,7 +458,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -509,7 +477,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -523,7 +490,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -539,7 +505,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -554,7 +519,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -571,7 +535,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -585,7 +548,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -601,7 +563,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -616,7 +577,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -633,7 +593,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -647,7 +606,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -663,7 +621,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -677,7 +634,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -693,7 +649,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -707,7 +662,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -723,7 +677,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -737,7 +690,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is greater than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be greater</param>
         /// <param name="arg2">The second value, expected to be less</param>
@@ -757,7 +709,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -771,7 +722,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -787,7 +737,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -802,7 +751,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -819,7 +767,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -833,7 +780,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -849,7 +795,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -864,7 +809,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -881,7 +825,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -895,7 +838,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -911,7 +853,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -925,7 +866,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -941,7 +881,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -955,7 +894,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -971,7 +909,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>
@@ -985,7 +922,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that the first value is less than or equal to the second
         /// value. If it is not, then an
-        /// <see cref="AssertionException"/> is thrown. 
         /// </summary>
         /// <param name="arg1">The first value, expected to be less</param>
         /// <param name="arg2">The second value, expected to be greater</param>

@@ -88,7 +88,6 @@ namespace NUnit.Framework
         {
             MessageWriter writer = new TextMessageWriter(message, args);
             result.WriteMessageTo(writer);
-            throw new InconclusiveException(writer.ToString());
         }
 
         /// <summary>
@@ -111,7 +110,7 @@ namespace NUnit.Framework
             var result = constraint.ApplyTo(del);
             if (!result.IsSuccess)
             {
-                throw new InconclusiveException(getExceptionMessage());
+                //throw new InconclusiveException(getExceptionMessage());
             }
         }
 
@@ -121,7 +120,6 @@ namespace NUnit.Framework
 
         /// <summary>
         /// Asserts that a condition is true. If the condition is false, the method throws
-        /// an <see cref="InconclusiveException"/>.
         /// </summary>
         /// <param name="condition">The evaluated condition</param>
         /// <param name="message">The message to display if the condition is false</param>
@@ -132,24 +130,12 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that a condition is true. If the condition is false, the
-        /// method throws an <see cref="InconclusiveException"/>.
+        /// Asserts that a condition is true.
         /// </summary>
         /// <param name="condition">The evaluated condition</param>
         public static void That([DoesNotReturnIf(false)] bool condition)
         {
             Assume.That(condition, Is.True, null, null);
-        }
-
-        /// <summary>
-        /// Asserts that a condition is true. If the condition is false, the method throws
-        /// an <see cref="InconclusiveException"/>.
-        /// </summary>
-        /// <param name="condition">The evaluated condition</param>
-        /// <param name="getExceptionMessage">A function to build the message included with the Exception</param>
-        public static void That([DoesNotReturnIf(false)] bool condition, Func<string?> getExceptionMessage)
-        {
-            Assume.That(condition, Is.True, getExceptionMessage);
         }
 
         #endregion
@@ -158,7 +144,6 @@ namespace NUnit.Framework
 
         /// <summary>
         /// Asserts that a condition is true. If the condition is false, the method throws
-        /// an <see cref="InconclusiveException"/>.
         /// </summary>
         /// <param name="condition">A lambda that returns a Boolean</param>
         /// <param name="message">The message to display if the condition is false</param>
@@ -170,23 +155,11 @@ namespace NUnit.Framework
 
         /// <summary>
         /// Asserts that a condition is true. If the condition is false, the method throws
-        /// an <see cref="InconclusiveException"/>.
         /// </summary>
         /// <param name="condition">A lambda that returns a Boolean</param>
         public static void That(Func<bool> condition)
         {
             Assume.That(condition.Invoke(), Is.True, null, null);
-        }
-
-        /// <summary>
-        /// Asserts that a condition is true. If the condition is false, the method throws
-        /// an <see cref="InconclusiveException"/>.
-        /// </summary>
-        /// <param name="condition">A lambda that returns a Boolean</param>
-        /// <param name="getExceptionMessage">A function to build the message included with the Exception</param>
-        public static void That(Func<bool> condition, Func<string?> getExceptionMessage)
-        {
-            Assume.That(condition.Invoke(), Is.True, getExceptionMessage);
         }
 
         #endregion
@@ -242,31 +215,6 @@ namespace NUnit.Framework
             {
                 MessageWriter writer = new TextMessageWriter(message, args);
                 result.WriteMessageTo(writer);
-                throw new InconclusiveException(writer.ToString());
-            }
-        }
-
-        /// <summary>
-        /// Apply a constraint to an actual value, succeeding if the constraint
-        /// is satisfied and throwing an InconclusiveException on failure.
-        /// </summary>
-        /// <typeparam name="TActual">The Type being compared.</typeparam>
-        /// <param name="actual">The actual value to test</param>
-        /// <param name="expression">A Constraint expression to be applied</param>
-        /// <param name="getExceptionMessage">A function to build the message included with the Exception</param>
-        public static void That<TActual>(
-            TActual actual,
-            IResolveConstraint expression,
-            Func<string?> getExceptionMessage)
-        {
-            CheckMultipleAssertLevel();
-
-            var constraint = expression.Resolve();
-
-            var result = constraint.ApplyTo(actual);
-            if (!result.IsSuccess)
-            {
-                throw new InconclusiveException(getExceptionMessage());
             }
         }
 
