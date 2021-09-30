@@ -1,6 +1,6 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Tests whether a value is greater than or equal to the value supplied to its constructor

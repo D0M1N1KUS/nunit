@@ -5,10 +5,11 @@
 using System;
 using System.Collections;
 using System.ComponentModel;
-using NUnit.Framework.Constraints;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Constraints;
+using NUnit.AssertPackage.Internal;
+using NUnit.AssertPackage.Internal.Execution;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Delegate used by tests that execute code and
@@ -278,15 +279,18 @@ namespace NUnit.Framework
             TestExecutionContext context = TestExecutionContext.CurrentContext;
             Guard.OperationValid(context != null, "There is no current test execution context.");
 
-            context.MultipleAssertLevel++;
+            if (context != null)
+            {
+                context.MultipleAssertLevel++;
 
-            try
-            {
-                testDelegate();
-            }
-            finally
-            {
-                context.MultipleAssertLevel--;
+                try
+                {
+                    testDelegate();
+                }
+                finally
+                {
+                    context.MultipleAssertLevel--;
+                }
             }
         }
 
@@ -301,15 +305,18 @@ namespace NUnit.Framework
             TestExecutionContext context = TestExecutionContext.CurrentContext;
             Guard.OperationValid(context != null, "There is no current test execution context.");
 
-            context.MultipleAssertLevel++;
+            if (context != null)
+            {
+                context.MultipleAssertLevel++;
 
-            try
-            {
-                AsyncToSyncAdapter.Await(testDelegate.Invoke);
-            }
-            finally
-            {
-                context.MultipleAssertLevel--;
+                try
+                {
+                    AsyncToSyncAdapter.Await(testDelegate.Invoke);
+                }
+                finally
+                {
+                    context.MultipleAssertLevel--;
+                }
             }
         }
 

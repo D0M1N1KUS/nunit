@@ -2,10 +2,9 @@
 
 #nullable enable
 
-using System;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// TestListener provides an implementation of ITestListener that

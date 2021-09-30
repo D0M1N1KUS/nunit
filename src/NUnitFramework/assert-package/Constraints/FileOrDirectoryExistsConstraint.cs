@@ -3,7 +3,7 @@
 using System;
 using System.IO;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// FileOrDirectoryExistsConstraint is used to determine if a file or directory exists

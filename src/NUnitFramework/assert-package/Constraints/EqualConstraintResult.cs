@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// The EqualConstraintResult class is tailored for formatting

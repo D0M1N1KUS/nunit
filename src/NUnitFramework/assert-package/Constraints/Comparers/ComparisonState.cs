@@ -1,8 +1,8 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     internal readonly ref struct ComparisonState
     {

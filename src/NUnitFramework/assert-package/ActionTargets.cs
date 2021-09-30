@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// The different targets a test action attribute can be applied to

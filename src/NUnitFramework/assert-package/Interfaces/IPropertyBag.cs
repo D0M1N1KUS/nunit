@@ -5,7 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// A PropertyBag represents a collection of name/value pairs

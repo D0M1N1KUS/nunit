@@ -1,9 +1,9 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
+
 using System;
-using System.Linq;
 using System.Reflection;
 
-namespace NUnit.Compatibility
+namespace NUnit.AssertPackage.Compatibility
 {
     /// <summary>
     /// Provides a platform-independent methods for getting attributes

@@ -4,9 +4,9 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal.Builders
+namespace NUnit.AssertPackage.Internal.Builders
 {
     /// <summary>
     /// ParameterDataSourceProvider supplies individual argument values for

@@ -2,10 +2,8 @@
 
 using System;
 using System.Collections.Generic;
-using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// Used for resolving the type difference between objects.

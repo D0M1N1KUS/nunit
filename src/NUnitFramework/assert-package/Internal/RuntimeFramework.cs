@@ -5,12 +5,12 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 #if NETSTANDARD2_0
-using System.Runtime.Versioning;
+
 #else
 using Microsoft.Win32;
 #endif
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// RuntimeFramework represents a particular version

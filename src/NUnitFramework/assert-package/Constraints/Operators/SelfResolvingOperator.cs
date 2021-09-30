@@ -1,6 +1,6 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints.Operators
 {
     /// <summary>
     /// Abstract base class for operators that are able to reduce to a 

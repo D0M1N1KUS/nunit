@@ -4,10 +4,9 @@ using System;
 using System.Diagnostics;
 using System.Reflection;
 using System.Threading;
-using NUnit.Compatibility;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     ///<summary>
     /// Applies a delay to the match so that a match can be evaluated in the future.

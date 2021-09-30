@@ -5,7 +5,7 @@ using System;
 using System.Runtime.Remoting.Messaging;
 using System.Security;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// This class ensures the <see cref="System.Runtime.Remoting.Messaging.CallContext"/> is correctly cleared

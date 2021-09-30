@@ -5,7 +5,7 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// BinarySerializableConstraint tests whether

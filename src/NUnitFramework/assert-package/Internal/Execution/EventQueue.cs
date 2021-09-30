@@ -2,9 +2,9 @@
 
 using System.Collections.Concurrent;
 using System.Threading;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal.Execution
+namespace NUnit.AssertPackage.Internal.Execution
 {
 
 #region Individual Event Classes

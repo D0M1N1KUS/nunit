@@ -2,8 +2,9 @@
 
 using System;
 using System.Collections.Generic;
+using NUnit.AssertPackage.Constraints.Operators;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// ConstraintBuilder maintains the stacks that are used in

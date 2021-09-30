@@ -4,10 +4,11 @@
 
 using System;
 using System.ComponentModel;
-using NUnit.Framework.Constraints;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Constraints;
+using NUnit.AssertPackage.Internal;
+using NUnit.AssertPackage.Internal.Execution;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Provides static methods to express conditions
@@ -87,7 +88,7 @@ namespace NUnit.Framework
         {
             MessageWriter writer = new TextMessageWriter(message, args);
             result.WriteMessageTo(writer);
-            Assert.Warn(writer.ToString());
+            AssertPackage.Assert.Warn(writer.ToString());
         }
 
         /// <summary>

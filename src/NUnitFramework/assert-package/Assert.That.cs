@@ -3,9 +3,9 @@
 #nullable enable
 
 using System;
-using NUnit.Framework.Constraints;
+using NUnit.AssertPackage.Constraints;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// The Assert class contains a collection of static methods that
@@ -25,7 +25,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         public static void That(bool condition, string? message, params object?[]? args)
         {
-            Assert.That(condition, Is.True, message, args);
+            AssertPackage.Assert.That(condition, Is.True, message, args);
         }
 
         /// <summary>
@@ -34,7 +34,7 @@ namespace NUnit.Framework
         /// <param name="condition">The evaluated condition</param>
         public static void That(bool condition)
         {
-            Assert.That(condition, Is.True, null, null);
+            AssertPackage.Assert.That(condition, Is.True, null, null);
         }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace NUnit.Framework
         /// <param name="getExceptionMessage">A function to build the message included with the Exception</param>
         public static void That(bool condition, Func<string?> getExceptionMessage)
         {
-            Assert.That(condition, Is.True, getExceptionMessage);
+            AssertPackage.Assert.That(condition, Is.True, getExceptionMessage);
         }
 
         #endregion
@@ -59,7 +59,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         public static void That(Func<bool> condition, string? message, params object?[]? args)
         {
-            Assert.That(condition.Invoke(), Is.True, message, args);
+            AssertPackage.Assert.That(condition.Invoke(), Is.True, message, args);
         }
 
         /// <summary>
@@ -68,7 +68,7 @@ namespace NUnit.Framework
         /// <param name="condition">A lambda that returns a Boolean</param>
         public static void That(Func<bool> condition)
         {
-            Assert.That(condition.Invoke(), Is.True, null, null);
+            AssertPackage.Assert.That(condition.Invoke(), Is.True, null, null);
         }
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace NUnit.Framework
         /// <param name="getExceptionMessage">A function to build the message included with the Exception</param>
         public static void That(Func<bool> condition, Func<string?> getExceptionMessage)
         {
-            Assert.That(condition.Invoke(), Is.True, getExceptionMessage);
+            AssertPackage.Assert.That(condition.Invoke(), Is.True, getExceptionMessage);
         }
 
         #endregion
@@ -93,7 +93,7 @@ namespace NUnit.Framework
         /// <param name="expr">A Constraint expression to be applied</param>
         public static void That<TActual>(ActualValueDelegate<TActual> del, IResolveConstraint expr)
         {
-            Assert.That(del, expr.Resolve(), null, null);
+            AssertPackage.Assert.That(del, expr.Resolve(), null, null);
         }
 
         /// <summary>
@@ -145,7 +145,7 @@ namespace NUnit.Framework
         /// <param name="constraint">A Constraint expression to be applied</param>
         public static void That(TestDelegate code, IResolveConstraint constraint)
         {
-            Assert.That(code, constraint, null, null);
+            AssertPackage.Assert.That(code, constraint, null, null);
         }
 
         /// <summary>
@@ -157,7 +157,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         public static void That(TestDelegate code, IResolveConstraint constraint, string? message, params object?[]? args)
         {
-            Assert.That((object)code, constraint, message, args);
+            AssertPackage.Assert.That((object)code, constraint, message, args);
         }
 
         /// <summary>
@@ -168,7 +168,7 @@ namespace NUnit.Framework
         /// <param name="getExceptionMessage">A function to build the message included with the Exception</param>
         public static void That(TestDelegate code, IResolveConstraint constraint, Func<string?> getExceptionMessage)
         {
-            Assert.That((object)code, constraint, getExceptionMessage);
+            AssertPackage.Assert.That((object)code, constraint, getExceptionMessage);
         }
 
         #endregion
@@ -186,7 +186,7 @@ namespace NUnit.Framework
         /// <param name="expression">A Constraint expression to be applied</param>
         public static void That<TActual>(TActual actual, IResolveConstraint expression)
         {
-            Assert.That(actual, expression, null, null);
+            AssertPackage.Assert.That(actual, expression, null, null);
         }
 
         /// <summary>
@@ -242,7 +242,7 @@ namespace NUnit.Framework
         /// <param name="expression">A Constraint expression to be applied</param>
         public static void ByVal(object? actual, IResolveConstraint expression)
         {
-            Assert.That(actual, expression, null, null);
+            AssertPackage.Assert.That(actual, expression, null, null);
         }
 
         /// <summary>
@@ -260,7 +260,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         public static void ByVal(object? actual, IResolveConstraint expression, string? message, params object?[]? args)
         {
-            Assert.That(actual, expression, message, args);
+            AssertPackage.Assert.That(actual, expression, message, args);
         }
 
         #endregion

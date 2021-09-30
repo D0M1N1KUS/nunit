@@ -1,7 +1,7 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 #if !NETFRAMEWORK
-namespace System.Web.UI
+namespace NUnit.AssertPackage.Compatibility.System.Web.UI
 {
     /// <summary>
     /// A shim of the .NET interface for platforms that do not support it.

@@ -2,9 +2,9 @@
 
 using System;
 using System.Reflection;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// PropertyExistsConstraint tests that a named property

@@ -2,7 +2,7 @@
 
 #nullable enable
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// Interface to be implemented by filters applied to tests.

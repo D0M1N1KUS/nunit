@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Internal.Extensions
+namespace NUnit.AssertPackage.Internal.Extensions
 {
     internal static class TypeExtensions
     {

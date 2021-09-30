@@ -1,6 +1,6 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// Any ITest that implements this interface is at a level that the implementing

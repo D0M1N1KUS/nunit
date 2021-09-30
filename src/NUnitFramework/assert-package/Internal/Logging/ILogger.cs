@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal.Logging
 {
     /// <summary>
     /// Interface for logging within the engine

@@ -1,12 +1,12 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-using Microsoft.Win32;
 using System;
 using System.Runtime.InteropServices;
 using System.Security;
 using System.Text;
+using Microsoft.Win32;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// OSPlatform represents a particular operating system platform

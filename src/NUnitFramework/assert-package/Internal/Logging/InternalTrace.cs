@@ -3,7 +3,7 @@
 using System;
 using System.IO;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal.Logging
 {
     /// <summary>
     /// InternalTrace provides facilities for tracing the execution

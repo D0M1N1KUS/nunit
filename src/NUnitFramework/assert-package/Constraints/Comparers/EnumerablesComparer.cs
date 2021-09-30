@@ -3,7 +3,7 @@
 using System;
 using System.Collections;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     /// <summary>
     /// Comparator for two <see cref="IEnumerable"/>s.

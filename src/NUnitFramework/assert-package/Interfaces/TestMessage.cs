@@ -5,7 +5,7 @@
 using System;
 using System.Diagnostics;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The <see cref="TestMessage"/> class holds a message sent by a test to all listeners

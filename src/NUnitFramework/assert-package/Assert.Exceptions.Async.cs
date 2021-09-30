@@ -3,10 +3,10 @@
 #nullable enable
 
 using System;
-using NUnit.Framework.Constraints;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Constraints;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     public partial class Assert
     {
@@ -32,7 +32,7 @@ namespace NUnit.Framework
                 caughtException = e;
             }
 
-            Assert.That(caughtException, expression, message, args);
+            AssertPackage.Assert.That(caughtException, expression, message, args);
 
             return caughtException;
         }
@@ -188,7 +188,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         public static void DoesNotThrowAsync(AsyncTestDelegate code, string? message, params object?[]? args)
         {
-            Assert.That(code, new ThrowsNothingConstraint(), message, args);
+            AssertPackage.Assert.That(code, new ThrowsNothingConstraint(), message, args);
         }
         /// <summary>
         /// Verifies that an async delegate does not throw an exception.

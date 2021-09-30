@@ -2,7 +2,7 @@
 
 #nullable enable
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The TestAttachment class represents a file attached to a TestResult,

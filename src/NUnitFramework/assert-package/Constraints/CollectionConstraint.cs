@@ -2,9 +2,9 @@
 
 using System;
 using System.Collections;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// CollectionConstraint is the abstract base class for

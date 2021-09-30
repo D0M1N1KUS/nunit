@@ -5,7 +5,7 @@
 using System;
 using System.Reflection;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The IParameterInfo interface is an abstraction of a .NET parameter.

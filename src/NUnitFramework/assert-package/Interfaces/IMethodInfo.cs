@@ -5,7 +5,7 @@
 using System;
 using System.Reflection;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The IMethodInfo class is used to encapsulate information

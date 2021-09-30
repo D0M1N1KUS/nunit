@@ -4,11 +4,12 @@
 
 using System;
 using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using NUnit.Framework.Constraints;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Compatibility.System.Diagnostics.CodeAnalysis;
+using NUnit.AssertPackage.Constraints;
+using NUnit.AssertPackage.Internal;
+using NUnit.AssertPackage.Internal.Execution;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Provides static methods to express the assumptions

@@ -1,19 +1,17 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Security;
 using System.Threading;
-using NUnit.Compatibility;
-using NUnit.Framework.Constraints;
-using NUnit.Framework.Interfaces;
-
+using NUnit.AssertPackage.Compatibility;
+using NUnit.AssertPackage.Constraints;
+using NUnit.AssertPackage.Interfaces;
 #if NETFRAMEWORK
 using System.Runtime.Remoting.Messaging;
 #endif
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// Helper class used to save and restore certain static or

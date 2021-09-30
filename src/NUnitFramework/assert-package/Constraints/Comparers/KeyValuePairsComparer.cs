@@ -3,9 +3,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     /// <summary>
     /// Comparator for two <see cref="KeyValuePair{TKey, TValue}"/>s.

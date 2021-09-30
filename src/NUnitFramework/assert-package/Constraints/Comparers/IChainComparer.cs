@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     /// <summary>
     /// Interface for comparing two <see cref="Object"/>s.

@@ -3,11 +3,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using NUnit.Compatibility;
 using System.Reflection;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
 
     /// <summary>

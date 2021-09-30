@@ -3,9 +3,8 @@
 using System;
 using System.Collections;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Contains extension methods that do not require a special <c>using</c> directive.

@@ -2,9 +2,9 @@
 
 using System;
 using System.Collections;
-using NUnit.Framework.Constraints;
+using NUnit.AssertPackage.Constraints;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Helper class with properties and methods that supply

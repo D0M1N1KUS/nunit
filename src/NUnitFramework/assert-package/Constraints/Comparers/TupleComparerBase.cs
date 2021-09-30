@@ -2,9 +2,8 @@
 
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     /// <summary>
     /// Base class for comparators for tuples (both regular Tuples and ValueTuples).

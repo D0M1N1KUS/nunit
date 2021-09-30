@@ -5,7 +5,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace NUnit.Framework.Internal.Builders
+namespace NUnit.AssertPackage.Internal.Builders
 {
     internal sealed class ProviderCache
     {

@@ -3,9 +3,9 @@
 #nullable enable
 
 using System;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal.Extensions
+namespace NUnit.AssertPackage.Internal.Extensions
 {
     /// <summary>
     /// Extensions to <see cref="IPropertyBag"/>.

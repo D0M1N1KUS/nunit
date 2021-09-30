@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Keeps track of an interval time which can be represented in

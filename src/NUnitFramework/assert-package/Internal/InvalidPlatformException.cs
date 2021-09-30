@@ -3,7 +3,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// InvalidPlatformException is thrown when the platform name supplied

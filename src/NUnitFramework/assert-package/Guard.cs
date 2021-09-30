@@ -3,12 +3,11 @@
 #nullable enable
 
 using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
-using NUnit.Compatibility;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Compatibility.System.Diagnostics.CodeAnalysis;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Class used to guard against unexpected argument values

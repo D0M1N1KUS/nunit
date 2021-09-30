@@ -3,7 +3,7 @@
 using System;
 using System.Security;
 
-namespace NUnit.Compatibility
+namespace NUnit.AssertPackage.Compatibility
 {
     /// <summary>
     /// A MarshalByRefObject that lives forever

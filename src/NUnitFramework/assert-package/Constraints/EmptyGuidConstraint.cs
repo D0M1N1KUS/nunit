@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// EmptyGuidConstraint tests whether a Guid is empty.

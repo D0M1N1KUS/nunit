@@ -4,9 +4,8 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// NUnitComparer encapsulates NUnit's default behavior

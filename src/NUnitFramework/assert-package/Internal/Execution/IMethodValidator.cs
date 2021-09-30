@@ -2,7 +2,7 @@
 
 using System.Reflection;
 
-namespace NUnit.Framework.Internal.Execution
+namespace NUnit.AssertPackage.Internal.Execution
 {
     /// <summary>
     /// Validates method to execute.

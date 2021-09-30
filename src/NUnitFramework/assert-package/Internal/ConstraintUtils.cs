@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// Provides methods to support consistent checking in constraints.

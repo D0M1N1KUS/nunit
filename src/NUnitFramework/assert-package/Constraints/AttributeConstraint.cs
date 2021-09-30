@@ -1,9 +1,9 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
+using NUnit.AssertPackage.Compatibility;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// AttributeConstraint tests that a specified attribute is present

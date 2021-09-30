@@ -3,7 +3,7 @@
 using System;
 using System.Globalization;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// SubstringConstraint can test whether a string contains

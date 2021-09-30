@@ -4,7 +4,7 @@
 
 using System.Collections;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// Provides data for a single test parameter.

@@ -2,10 +2,9 @@
 
 #nullable enable
 
-using System;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal.Execution
+namespace NUnit.AssertPackage.Internal.Execution
 {
     /// <summary>
     /// QueuingEventListener uses an EventQueue to store any

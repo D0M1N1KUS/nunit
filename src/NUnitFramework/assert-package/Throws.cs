@@ -1,10 +1,10 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using System;
-using System.Collections;
-using NUnit.Framework.Constraints;
+using NUnit.AssertPackage.Constraints;
+using NUnit.AssertPackage.Constraints.Operators;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Helper class with properties and methods that supply

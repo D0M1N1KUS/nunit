@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// ExactTypeConstraint is used to test that an object

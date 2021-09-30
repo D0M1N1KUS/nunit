@@ -9,9 +9,10 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Reflection;
 using System.Text;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Compatibility.System.Diagnostics.CodeAnalysis;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Custom value formatter function

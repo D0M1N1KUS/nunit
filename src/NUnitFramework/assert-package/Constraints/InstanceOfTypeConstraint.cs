@@ -2,9 +2,8 @@
 
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// InstanceOfTypeConstraint is used to test that an object

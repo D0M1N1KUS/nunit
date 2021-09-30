@@ -4,13 +4,12 @@
 
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Text;
-using NUnit.Compatibility;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Compatibility.System.Diagnostics.CodeAnalysis;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// TypeHelper provides static methods that operate on Types.

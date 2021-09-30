@@ -1,6 +1,6 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Internal.Abstractions
+namespace NUnit.AssertPackage.Internal.Abstractions
 {
     /// <summary>
     /// A layer of abstraction around <see cref="System.Diagnostics.Debugger"/> to facilitate testing.

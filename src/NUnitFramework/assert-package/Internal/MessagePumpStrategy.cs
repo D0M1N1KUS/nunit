@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Security;
 using System.Threading;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     internal abstract class MessagePumpStrategy
     {

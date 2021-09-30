@@ -2,7 +2,7 @@
 
 #nullable enable
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     public abstract partial class Assert
     {
@@ -51,7 +51,7 @@ namespace NUnit.Framework
         /// <param name="args">Array of objects to be used in formatting the message</param>
         public static void AreEqual(object? expected, object? actual, string? message, params object?[]? args)
         {
-            Assert.That(actual, Is.EqualTo(expected), message, args);
+            AssertPackage.Assert.That(actual, Is.EqualTo(expected), message, args);
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace NUnit.Framework
         /// <param name="actual">The actual value</param>
         public static void AreEqual(object? expected, object? actual)
         {
-            Assert.That(actual, Is.EqualTo(expected), null, null);
+            AssertPackage.Assert.That(actual, Is.EqualTo(expected), null, null);
         }
 
         #endregion
@@ -85,7 +85,7 @@ namespace NUnit.Framework
         /// <param name="args">Array of objects to be used in formatting the message</param>
         public static void AreNotEqual(object? expected, object? actual, string? message, params object?[]? args)
         {
-            Assert.That(actual, Is.Not.EqualTo(expected), message, args);
+            AssertPackage.Assert.That(actual, Is.Not.EqualTo(expected), message, args);
         }
 
         /// <summary>
@@ -97,7 +97,7 @@ namespace NUnit.Framework
         /// <param name="actual">The actual value</param>
         public static void AreNotEqual(object? expected, object? actual)
         {
-            Assert.That(actual, Is.Not.EqualTo(expected), null, null);
+            AssertPackage.Assert.That(actual, Is.Not.EqualTo(expected), null, null);
         }
 
         #endregion
@@ -116,7 +116,7 @@ namespace NUnit.Framework
         /// <param name="args">Array of objects to be used in formatting the message</param>
         public static void AreSame(object? expected, object? actual, string? message, params object?[]? args)
         {
-            Assert.That(actual, Is.SameAs(expected), message, args);
+            AssertPackage.Assert.That(actual, Is.SameAs(expected), message, args);
         }
 
         /// <summary>
@@ -127,7 +127,7 @@ namespace NUnit.Framework
         /// <param name="actual">The actual object</param>
         public static void AreSame(object? expected, object? actual)
         {
-            Assert.That(actual, Is.SameAs(expected), null, null);
+            AssertPackage.Assert.That(actual, Is.SameAs(expected), null, null);
         }
 
         #endregion
@@ -144,7 +144,7 @@ namespace NUnit.Framework
         /// <param name="args">Array of objects to be used in formatting the message</param>
         public static void AreNotSame(object? expected, object? actual, string? message, params object?[]? args)
         {
-            Assert.That(actual, Is.Not.SameAs(expected), message, args);
+            AssertPackage.Assert.That(actual, Is.Not.SameAs(expected), message, args);
         }
 
         /// <summary>
@@ -155,7 +155,7 @@ namespace NUnit.Framework
         /// <param name="actual">The actual object</param>
         public static void AreNotSame(object? expected, object? actual)
         {
-            Assert.That(actual, Is.Not.SameAs(expected), null, null);
+            AssertPackage.Assert.That(actual, Is.Not.SameAs(expected), null, null);
         }
 
         #endregion
@@ -175,9 +175,9 @@ namespace NUnit.Framework
         protected static void AssertDoublesAreEqual(double expected, double actual, double delta, string? message, object?[]? args)
         {
             if (double.IsNaN(expected) || double.IsInfinity(expected))
-                Assert.That(actual, Is.EqualTo(expected), message, args);
+                AssertPackage.Assert.That(actual, Is.EqualTo(expected), message, args);
             else
-                Assert.That(actual, Is.EqualTo(expected).Within(delta), message, args);
+                AssertPackage.Assert.That(actual, Is.EqualTo(expected).Within(delta), message, args);
         }
 
         #endregion

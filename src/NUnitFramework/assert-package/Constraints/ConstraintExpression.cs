@@ -3,8 +3,9 @@
 using System;
 using System.Collections;
 using System.Text.RegularExpressions;
+using NUnit.AssertPackage.Constraints.Operators;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// ConstraintExpression represents a compound constraint in the

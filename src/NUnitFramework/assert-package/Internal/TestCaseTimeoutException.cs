@@ -1,10 +1,10 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Internal
-{
-    using System;
-    using System.Runtime.Serialization;
+using System;
+using System.Runtime.Serialization;
 
+namespace NUnit.AssertPackage.Internal
+{
     /// <summary>
     /// TestCaseTimeoutException is thrown when a test running directly
     /// on a TestWorker thread is cancelled due to timeout.

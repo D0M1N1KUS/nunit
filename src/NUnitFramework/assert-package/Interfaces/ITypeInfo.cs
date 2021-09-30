@@ -4,9 +4,8 @@
 
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The ITypeInfo interface is an abstraction of a .NET Type

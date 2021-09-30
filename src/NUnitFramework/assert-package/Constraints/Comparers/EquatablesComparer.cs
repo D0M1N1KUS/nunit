@@ -3,7 +3,7 @@
 using System;
 using System.Reflection;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     /// <summary>
     /// Comparator for two types related by <see cref="IEquatable{T}"/>.

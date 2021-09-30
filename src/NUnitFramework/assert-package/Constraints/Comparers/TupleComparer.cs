@@ -2,10 +2,9 @@
 
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     /// <summary>
     /// Comparator for two <c>Tuple</c>s.

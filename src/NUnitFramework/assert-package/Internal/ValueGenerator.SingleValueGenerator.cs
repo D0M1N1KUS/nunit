@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     partial class ValueGenerator
     {

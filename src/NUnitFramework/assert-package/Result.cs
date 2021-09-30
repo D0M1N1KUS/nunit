@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     internal static class Result
     {

@@ -2,9 +2,9 @@
 
 #nullable enable
 
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The IApplyToContext interface is implemented by attributes

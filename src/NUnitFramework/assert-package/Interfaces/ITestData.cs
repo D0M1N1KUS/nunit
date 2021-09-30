@@ -2,7 +2,7 @@
 
 #nullable enable
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The ITestData interface is implemented by a class that

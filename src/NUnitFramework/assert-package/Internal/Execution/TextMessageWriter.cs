@@ -2,10 +2,9 @@
 
 using System;
 using System.Collections;
-using System.Globalization;
-using NUnit.Framework.Constraints;
+using NUnit.AssertPackage.Constraints;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal.Execution
 {
     /// <summary>
     /// TextMessageWriter writes constraint descriptions and messages

@@ -2,9 +2,8 @@
 
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     internal static partial class CSharpPatternBasedAwaitAdapter
     {

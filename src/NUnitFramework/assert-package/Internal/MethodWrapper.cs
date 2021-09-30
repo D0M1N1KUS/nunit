@@ -4,10 +4,9 @@
 
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// The MethodWrapper class wraps a MethodInfo so that it may

@@ -2,7 +2,7 @@
 
 using System.Threading;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// Useful when wrapping awaiters whose <c>GetResult</c> method does not block until complete.

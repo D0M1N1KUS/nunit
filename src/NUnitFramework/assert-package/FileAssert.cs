@@ -1,11 +1,11 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using System;
-using System.IO;
 using System.ComponentModel;
-using NUnit.Framework.Constraints;
+using System.IO;
+using NUnit.AssertPackage.Constraints;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     /// <summary>
     /// Asserts on Files
@@ -56,7 +56,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         static public void AreEqual(Stream expected, Stream actual, string message, params object[] args)
         {
-            Assert.That(actual, Is.EqualTo(expected), message, args);
+            AssertPackage.Assert.That(actual, Is.EqualTo(expected), message, args);
         }
 
         /// <summary>
@@ -148,7 +148,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         static public void AreNotEqual(Stream expected, Stream actual, string message, params object[] args)
         {
-            Assert.That(actual, Is.Not.EqualTo(expected), message, args);
+            AssertPackage.Assert.That(actual, Is.Not.EqualTo(expected), message, args);
         }
 
         /// <summary>
@@ -233,7 +233,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         static public void Exists(FileInfo actual, string message, params object[] args)
         {
-            Assert.That(actual, new FileOrDirectoryExistsConstraint().IgnoreDirectories, message, args);
+            AssertPackage.Assert.That(actual, new FileOrDirectoryExistsConstraint().IgnoreDirectories, message, args);
         }
 
         /// <summary>
@@ -256,7 +256,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         static public void Exists(string actual, string message, params object[] args)
         {
-            Assert.That(actual, new FileOrDirectoryExistsConstraint().IgnoreDirectories, message, args);
+            AssertPackage.Assert.That(actual, new FileOrDirectoryExistsConstraint().IgnoreDirectories, message, args);
         }
 
         /// <summary>
@@ -283,7 +283,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         static public void DoesNotExist(FileInfo actual, string message, params object[] args)
         {
-            Assert.That(actual, new NotConstraint(new FileOrDirectoryExistsConstraint().IgnoreDirectories), message, args);
+            AssertPackage.Assert.That(actual, new NotConstraint(new FileOrDirectoryExistsConstraint().IgnoreDirectories), message, args);
         }
 
         /// <summary>
@@ -306,7 +306,7 @@ namespace NUnit.Framework
         /// <param name="args">Arguments to be used in formatting the message</param>
         static public void DoesNotExist(string actual, string message, params object[] args)
         {
-            Assert.That(actual, new NotConstraint(new FileOrDirectoryExistsConstraint().IgnoreDirectories), message, args);
+            AssertPackage.Assert.That(actual, new NotConstraint(new FileOrDirectoryExistsConstraint().IgnoreDirectories), message, args);
         }
 
         /// <summary>

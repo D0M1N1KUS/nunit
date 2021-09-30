@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Security;
 using System.Threading;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// Holds thread state which is captured and restored in order to sandbox user code.

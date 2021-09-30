@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Concurrent;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     internal static partial class CSharpPatternBasedAwaitAdapter
     {

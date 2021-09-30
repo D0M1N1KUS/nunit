@@ -2,9 +2,7 @@
 
 #nullable enable
 
-using System;
-
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The TestOutput class holds a unit of output from 

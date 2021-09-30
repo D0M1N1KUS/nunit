@@ -2,7 +2,7 @@
 
 using System.IO;
 
-namespace NUnit.Framework.Constraints.Comparers
+namespace NUnit.AssertPackage.Constraints.Comparers
 {
     /// <summary>
     /// Comparator for two <see cref="DirectoryInfo"/>s.

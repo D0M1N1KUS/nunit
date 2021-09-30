@@ -3,7 +3,7 @@
 using System;
 using System.Threading;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// Enables the <see cref="On.Dispose"/> syntax.

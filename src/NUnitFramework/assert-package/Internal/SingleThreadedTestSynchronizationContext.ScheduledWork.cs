@@ -2,7 +2,7 @@
 
 using System.Threading;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     partial class SingleThreadedTestSynchronizationContext
     {

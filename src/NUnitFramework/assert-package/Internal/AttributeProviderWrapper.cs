@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     internal class AttributeProviderWrapper<T> : ICustomAttributeProvider
         where T : Attribute

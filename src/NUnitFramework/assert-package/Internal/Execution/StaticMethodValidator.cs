@@ -3,7 +3,7 @@
 using System;
 using System.Reflection;
 
-namespace NUnit.Framework.Internal.Execution
+namespace NUnit.AssertPackage.Internal.Execution
 {
     /// <summary>
     /// Checks whether the method to execute is static.

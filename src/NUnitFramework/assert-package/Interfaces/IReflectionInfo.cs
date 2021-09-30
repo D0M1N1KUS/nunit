@@ -2,7 +2,7 @@
 
 #nullable enable
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The IReflectionInfo interface is implemented by NUnit wrapper objects that perform reflection.

@@ -1,10 +1,10 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Internal
-{
-    using System;
-    using System.Runtime.Serialization;
+using System;
+using System.Runtime.Serialization;
 
+namespace NUnit.AssertPackage.Internal
+{
     /// <summary>
     /// Thrown when an assertion failed. Here to preserve the inner
     /// exception and hence its stack trace.

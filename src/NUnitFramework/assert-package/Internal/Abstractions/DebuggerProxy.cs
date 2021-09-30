@@ -2,7 +2,7 @@
 
 using System.Diagnostics;
 
-namespace NUnit.Framework.Internal.Abstractions
+namespace NUnit.AssertPackage.Internal.Abstractions
 {
     /// <summary>
     /// A production <see cref="IDebugger"/> implementation that delegates directly to .NET's <see cref="Debugger"/>.

@@ -2,7 +2,7 @@
 
 #nullable enable
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// Common interface supported by all representations

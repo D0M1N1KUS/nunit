@@ -2,7 +2,7 @@
 
 using System.Text.RegularExpressions;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// RegexConstraint can test whether a string matches

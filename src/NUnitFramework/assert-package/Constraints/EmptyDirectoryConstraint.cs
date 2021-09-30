@@ -2,9 +2,9 @@
 
 using System.IO;
 using System.Linq;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// EmptyDirectoryConstraint is used to test that a directory is empty

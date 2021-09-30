@@ -3,9 +3,8 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using NUnit.Compatibility;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     internal static class FSharpAsyncAwaitAdapter
     {

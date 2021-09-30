@@ -2,7 +2,7 @@
 
 using System.Collections.Generic;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Contain the result of matching a <see cref="ExactCountConstraint"/> against an actual value.

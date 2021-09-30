@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// TypeConstraint is the abstract base for constraints

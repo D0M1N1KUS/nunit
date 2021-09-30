@@ -1,6 +1,6 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints.Operators
 {
     /// <summary>
     /// Operator that tests that an exception is thrown and

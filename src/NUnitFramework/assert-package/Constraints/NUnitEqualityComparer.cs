@@ -2,9 +2,9 @@
 
 using System;
 using System.Collections.Generic;
-using NUnit.Framework.Constraints.Comparers;
+using NUnit.AssertPackage.Constraints.Comparers;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// NUnitEqualityComparer encapsulates NUnit's handling of

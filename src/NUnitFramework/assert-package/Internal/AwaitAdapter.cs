@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// Adapts various styles of asynchronous waiting to a common API.

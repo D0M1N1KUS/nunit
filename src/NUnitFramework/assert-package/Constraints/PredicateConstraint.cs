@@ -2,10 +2,9 @@
 
 using System;
 using System.Reflection;
-using NUnit.Compatibility;
-using NUnit.Framework.Internal;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Predicate constraint wraps a Predicate in a constraint,

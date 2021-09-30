@@ -1,10 +1,10 @@
 ﻿// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-using System;
 using System.IO;
+
 //using System.Runtime.Remoting.Messaging;
 
-namespace NUnit.Framework.Internal.Execution
+namespace NUnit.AssertPackage.Internal.Execution
 {
     /// <summary>
     /// The TextCapture class intercepts console output and writes it

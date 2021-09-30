@@ -1,7 +1,8 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
-using NUnit.Framework.Internal;
 
-namespace NUnit.Framework.Constraints
+using NUnit.AssertPackage.Internal;
+
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Summary description for SamePathConstraint.

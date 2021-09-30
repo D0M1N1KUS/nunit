@@ -3,13 +3,13 @@
 using System;
 using System.Collections;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
     internal static class ExceptionExtensions
     {
         /// <summary>
         /// If <see cref="Exception.StackTrace"/> throws, returns "SomeException was thrown by the Exception.StackTrace
-        /// property." See also <see cref="Assert.GetEnvironmentStackTraceWithoutThrowing"/>.
+        /// property." See also <see cref="AssertPackage.Assert.GetEnvironmentStackTraceWithoutThrowing"/>.
         /// </summary>
         // https://github.com/dotnet/coreclr/issues/19698 is also currently present in .NET Framework 4.7 and 4.8. A
         // race condition between threads reading the same PDB file to obtain file and line info for a stack trace

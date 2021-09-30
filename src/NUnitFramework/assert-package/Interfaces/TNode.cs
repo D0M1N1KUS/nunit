@@ -3,11 +3,11 @@
 #nullable enable
 
 using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using System.Xml;
+using NUnit.AssertPackage.Compatibility.System.Diagnostics.CodeAnalysis;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// TNode represents a single node in the XML representation
@@ -175,7 +175,7 @@ namespace NUnit.Framework.Interfaces
         /// <param name="value">The value of the attribute.</param>
         public void AddAttribute(string name, string value)
         {
-            Attributes.Add(name, EscapeInvalidXmlCharacters(value));
+            Attributes.Add(name, EscapeInvalidXmlCharacters(value) ?? string.Empty);
         }
 
         /// <summary>

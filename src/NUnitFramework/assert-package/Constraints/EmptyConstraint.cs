@@ -2,7 +2,7 @@
 
 using System;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// EmptyConstraint tests a whether a string or collection is empty,

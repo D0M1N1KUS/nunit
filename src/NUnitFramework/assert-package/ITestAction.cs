@@ -1,11 +1,9 @@
 ﻿// Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-using System;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework
+namespace NUnit.AssertPackage
 {
-    using Interfaces;
-
     /// <summary>
     /// When implemented by an attribute, this interface implemented to provide actions to execute before and after tests.
     /// </summary>

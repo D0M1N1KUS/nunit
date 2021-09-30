@@ -1,7 +1,8 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
+
 using System;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints.Operators
 {
     /// <summary>
     /// Operator that tests for the presence of a particular attribute

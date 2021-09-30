@@ -2,7 +2,7 @@
 
 using System.Runtime.CompilerServices;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Tests that the actual value is default value for type.

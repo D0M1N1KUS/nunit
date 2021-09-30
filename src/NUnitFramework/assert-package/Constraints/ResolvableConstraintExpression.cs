@@ -1,6 +1,8 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-namespace NUnit.Framework.Constraints
+using NUnit.AssertPackage.Constraints.Operators;
+
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// ResolvableConstraintExpression is used to represent a compound

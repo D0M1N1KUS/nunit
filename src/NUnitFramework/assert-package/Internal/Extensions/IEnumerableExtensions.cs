@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.Linq;
 
-namespace NUnit.Framework.Internal.Extensions
+namespace NUnit.AssertPackage.Internal.Extensions
 {
     internal static class IEnumerableExtensions
     {

@@ -3,7 +3,7 @@
 using System.IO;
 using System.Collections;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// MessageWriter is the abstract base for classes that write

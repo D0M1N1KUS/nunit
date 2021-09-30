@@ -3,9 +3,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using NUnit.Framework.Internal.Extensions;
+using NUnit.AssertPackage.Internal.Extensions;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary><see cref="CollectionTally"/> counts (tallies) the number of occurrences 
     /// of each object in one or more enumerations.</summary>

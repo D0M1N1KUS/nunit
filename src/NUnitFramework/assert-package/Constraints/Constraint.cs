@@ -1,12 +1,12 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
-using NUnit.Framework.Internal;
-using NUnit.Compatibility;
 using System.Collections;
 using System;
 using System.Reflection;
+using NUnit.AssertPackage.Constraints.Operators;
+using NUnit.AssertPackage.Internal;
 
-namespace NUnit.Framework.Constraints
+namespace NUnit.AssertPackage.Constraints
 {
     /// <summary>
     /// Delegate used to delay evaluation of the actual value

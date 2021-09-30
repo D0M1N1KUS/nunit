@@ -2,9 +2,7 @@
 
 #nullable enable
 
-using System;
-
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// An object implementing IXmlNodeBuilder is able to build 

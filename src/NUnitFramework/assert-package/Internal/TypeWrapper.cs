@@ -5,10 +5,9 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using NUnit.Compatibility;
-using NUnit.Framework.Interfaces;
+using NUnit.AssertPackage.Interfaces;
 
-namespace NUnit.Framework.Internal
+namespace NUnit.AssertPackage.Internal
 {
     /// <summary>
     /// The TypeWrapper class wraps a Type so it may be used in

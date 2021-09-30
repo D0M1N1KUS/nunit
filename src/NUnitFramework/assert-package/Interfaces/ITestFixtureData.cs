@@ -4,7 +4,7 @@
 
 using System;
 
-namespace NUnit.Framework.Interfaces
+namespace NUnit.AssertPackage.Interfaces
 {
     /// <summary>
     /// The ITestCaseData interface is implemented by a class
