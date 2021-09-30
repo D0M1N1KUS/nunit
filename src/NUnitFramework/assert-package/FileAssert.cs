@@ -49,7 +49,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that two Streams are equal.  Two Streams are considered
         /// equal if both are null, or if both have the same value byte for byte.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
         /// </summary>
         /// <param name="expected">The expected Stream</param>
         /// <param name="actual">The actual Stream</param>
@@ -63,7 +62,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that two Streams are equal.  Two Streams are considered
         /// equal if both are null, or if both have the same value byte for byte.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
         /// </summary>
         /// <param name="expected">The expected Stream</param>
         /// <param name="actual">The actual Stream</param>
@@ -78,7 +76,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that two files are equal.  Two files are considered
         /// equal if both are null, or if both have the same value byte for byte.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
         /// </summary>
         /// <param name="expected">A file containing the value that is expected</param>
         /// <param name="actual">A file containing the actual value</param>
@@ -96,7 +93,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that two files are equal.  Two files are considered
         /// equal if both are null, or if both have the same value byte for byte.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
         /// </summary>
         /// <param name="expected">A file containing the value that is expected</param>
         /// <param name="actual">A file containing the actual value</param>
@@ -111,7 +107,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that two files are equal.  Two files are considered
         /// equal if both are null, or if both have the same value byte for byte.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
         /// </summary>
         /// <param name="expected">The path to a file containing the value that is expected</param>
         /// <param name="actual">The path to a file containing the actual value</param>
@@ -129,7 +124,6 @@ namespace NUnit.Framework
         /// <summary>
         /// Verifies that two files are equal.  Two files are considered
         /// equal if both are null, or if both have the same value byte for byte.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
         /// </summary>
         /// <param name="expected">The path to a file containing the value that is expected</param>
         /// <param name="actual">The path to a file containing the actual value</param>
@@ -146,8 +140,7 @@ namespace NUnit.Framework
 
         #region Streams
         /// <summary>
-        /// Asserts that two Streams are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two Streams are not equal.
         /// </summary>
         /// <param name="expected">The expected Stream</param>
         /// <param name="actual">The actual Stream</param>
@@ -159,8 +152,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that two Streams are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two Streams are not equal.
         /// </summary>
         /// <param name="expected">The expected Stream</param>
         /// <param name="actual">The actual Stream</param>
@@ -172,8 +164,7 @@ namespace NUnit.Framework
 
         #region FileInfo
         /// <summary>
-        /// Asserts that two files are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two files are not equal.
         /// </summary>
         /// <param name="expected">A file containing the value that is expected</param>
         /// <param name="actual">A file containing the actual value</param>
@@ -189,8 +180,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that two files are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two files are not equal.
         /// </summary>
         /// <param name="expected">A file containing the value that is expected</param>
         /// <param name="actual">A file containing the actual value</param>
@@ -203,8 +193,7 @@ namespace NUnit.Framework
 
         #region String
         /// <summary>
-        /// Asserts that two files are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two files are not equal.
         /// </summary>
         /// <param name="expected">The path to a file containing the value that is expected</param>
         /// <param name="actual">The path to a file containing the actual value</param>
@@ -220,8 +209,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that two files are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two files are not equal.
         /// </summary>
         /// <param name="expected">The path to a file containing the value that is expected</param>
         /// <param name="actual">The path to a file containing the actual value</param>
@@ -238,8 +226,7 @@ namespace NUnit.Framework
 
         #region FileInfo
         /// <summary>
-        /// Asserts that the file exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file exists.
         /// </summary>
         /// <param name="actual">A file containing the actual value</param>
         /// <param name="message">The message to display if Streams are not equal</param>
@@ -250,8 +237,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the file exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file exists.
         /// </summary>
         /// <param name="actual">A file containing the actual value</param>
         static public void Exists(FileInfo actual)
@@ -263,8 +249,7 @@ namespace NUnit.Framework
 
         #region String
         /// <summary>
-        /// Asserts that the file exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file exists.
         /// </summary>
         /// <param name="actual">The path to a file containing the actual value</param>
         /// <param name="message">The message to display if Streams are not equal</param>
@@ -275,8 +260,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the file exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file exists.
         /// </summary>
         /// <param name="actual">The path to a file containing the actual value</param>
         static public void Exists(string actual)
@@ -292,8 +276,7 @@ namespace NUnit.Framework
 
         #region FileInfo
         /// <summary>
-        /// Asserts that the file does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file does not exist.
         /// </summary>
         /// <param name="actual">A file containing the actual value</param>
         /// <param name="message">The message to display if Streams are not equal</param>
@@ -304,8 +287,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the file does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file does not exist.
         /// </summary>
         /// <param name="actual">A file containing the actual value</param>
         static public void DoesNotExist(FileInfo actual)
@@ -317,8 +299,7 @@ namespace NUnit.Framework
 
         #region String
         /// <summary>
-        /// Asserts that the file does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file does not exist.
         /// </summary>
         /// <param name="actual">The path to a file containing the actual value</param>
         /// <param name="message">The message to display if Streams are not equal</param>
@@ -329,8 +310,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the file does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the file does not exist.
         /// </summary>
         /// <param name="actual">The path to a file containing the actual value</param>
         static public void DoesNotExist(string actual)

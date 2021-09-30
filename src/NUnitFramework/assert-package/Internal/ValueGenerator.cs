@@ -5,7 +5,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using NUnit.Compatibility;
 
 namespace NUnit.Framework.Internal
 {
@@ -91,9 +90,9 @@ namespace NUnit.Framework.Internal
             /// <param name="value">The amount by which to increment each time this step is applied.</param>
             /// <param name="apply">
             /// Must increment the given value and return the result.
-            /// If the result is outside the range representable by <typeparamref name="T"/>,
+            /// If the result is outside the range representable by <typeparamref name="TStep"/>,
             /// must throw <see cref="OverflowException"/>. If the result does not change due to lack
-            /// of precision representable by <typeparamref name="T"/>, must throw <see cref="ArithmeticException"/>.
+            /// of precision representable by <typeparamref name="TStep"/>, must throw <see cref="ArithmeticException"/>.
             /// </param>
             public ComparableStep(TStep value, Func<T, TStep, T> apply)
             {
@@ -107,9 +106,9 @@ namespace NUnit.Framework.Internal
 
             /// <summary>
             /// Increments the given value and returns the result.
-            /// If the result is outside the range representable by <typeparamref name="T"/>,
+            /// If the result is outside the range representable by <typeparamref name="TStep"/>,
             /// throws <see cref="OverflowException"/>. If the result does not change due to lack
-            /// of precision representable by <typeparamref name="T"/>, throws <see cref="ArithmeticException"/>.
+            /// of precision representable by <typeparamref name="TStep"/>, throws <see cref="ArithmeticException"/>.
             /// </summary>
             /// <exception cref="OverflowException"/>
             /// <exception cref="ArithmeticException"/>
@@ -117,16 +116,16 @@ namespace NUnit.Framework.Internal
         }
 
         /// <summary>
-        /// Encapsulates the ability to increment a <typeparamref name="T"/> value by an amount
+        /// Encapsulates the ability to increment a T value by an amount
         /// which may be of a different type.
         /// </summary>
         public new abstract class Step : ValueGenerator.Step
         {
             /// <summary>
             /// Increments the given value and returns the result.
-            /// If the result is outside the range representable by <typeparamref name="T"/>,
+            /// If the result is outside the range representable by T,
             /// throws <see cref="OverflowException"/>. If the result does not change due to lack
-            /// of precision representable by <typeparamref name="T"/>, throws <see cref="ArithmeticException"/>.
+            /// of precision representable by T, throws <see cref="ArithmeticException"/>.
             /// </summary>
             /// <exception cref="OverflowException"/>
             /// <exception cref="ArithmeticException"/>

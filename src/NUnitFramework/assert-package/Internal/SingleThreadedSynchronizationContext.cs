@@ -155,10 +155,6 @@ namespace NUnit.Framework.Internal
 
         private static Exception ErrorAndGetExceptionForShutdownTimeout()
         {
-            var testExecutionContext = TestExecutionContext.CurrentContext;
-
-            testExecutionContext?.CurrentResult.RecordAssertion(AssertionStatus.Error, ShutdownTimeoutMessage);
-
             return new InvalidOperationException(ShutdownTimeoutMessage);
         }
 

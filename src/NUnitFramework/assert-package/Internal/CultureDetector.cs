@@ -49,40 +49,6 @@ namespace NUnit.Framework.Internal
         }
 
         /// <summary>
-        /// Tests to determine if the current culture is supported
-        /// based on a culture attribute.
-        /// </summary>
-        /// <param name="cultureAttribute">The attribute to examine</param>
-        /// <returns></returns>
-        public bool IsCultureSupported( CultureAttribute cultureAttribute )
-        {
-            string include = cultureAttribute.Include;
-            string exclude = cultureAttribute.Exclude;
-
-            //try
-            //{
-                if (include != null && !IsCultureSupported(include))
-                {
-                    reason = string.Format("Only supported under culture {0}", include);
-                    return false;
-                }
-
-                if (exclude != null && IsCultureSupported(exclude))
-                {
-                    reason = string.Format("Not supported under culture {0}", exclude);
-                    return false;
-                }
-            //}
-            //catch( ArgumentException ex )
-            //{
-            //    reason = string.Format( "Invalid culture: {0}", ex.ParamName );
-            //    return false; 
-            //}
-
-            return true;
-        }
-
-        /// <summary>
         /// Test to determine if the a particular culture or comma-
         /// delimited set of cultures is in use.
         /// </summary>

@@ -6,7 +6,6 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using NUnit.Framework.Constraints;
-using NUnit.Framework.Interfaces;
 using NUnit.Framework.Internal;
 
 namespace NUnit.Framework
@@ -114,7 +113,7 @@ namespace NUnit.Framework
             else if (args != null && args.Length > 0)
                 message = string.Format(message, args);
 
-            ReportFailure(message);
+            // TODO: ReportFailure(message);
         }
 
         /// <summary>
@@ -289,11 +288,6 @@ namespace NUnit.Framework
             {
                 context.MultipleAssertLevel--;
             }
-
-            if (context.MultipleAssertLevel == 0 && context.CurrentResult.PendingFailures > 0)
-            {
-                context.CurrentResult.RecordTestCompletion();
-            }
         }
 
         /// <summary>
@@ -317,11 +311,6 @@ namespace NUnit.Framework
             {
                 context.MultipleAssertLevel--;
             }
-
-            if (context.MultipleAssertLevel == 0 && context.CurrentResult.PendingFailures > 0)
-            {
-                context.CurrentResult.RecordTestCompletion();
-            }
         }
 
         #endregion
@@ -337,26 +326,11 @@ namespace NUnit.Framework
         {
             MessageWriter writer = new TextMessageWriter(message, args);
             result.WriteMessageTo(writer);
-
-            ReportFailure(writer.ToString());
-        }
-
-        private static void ReportFailure(string? message)
-        {
-            // Record the failure in an <assertion> element
-            var result = TestExecutionContext.CurrentContext.CurrentResult;
-            result.RecordAssertion(AssertionStatus.Failed, message, GetStackTrace());
-            result.RecordTestCompletion();
-
-            // If we are outside any multiple assert block, then throw
-            if (TestExecutionContext.CurrentContext.MultipleAssertLevel == 0)
-                throw new Exception(result.Message);
         }
 
         private static void IssueWarning(string? message)
         {
-            var result = TestExecutionContext.CurrentContext.CurrentResult;
-            result.RecordAssertion(AssertionStatus.Warning, message, GetStackTrace());
+            // TODO
         }
 
         // System.Environment.StackTrace puts extra entries on top of the stack, at least in some environments

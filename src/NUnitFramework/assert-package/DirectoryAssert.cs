@@ -47,8 +47,7 @@ namespace NUnit.Framework
         #region DirectoryInfo
         /// <summary>
         /// Verifies that two directories are equal.  Two directories are considered
-        /// equal if both are null, or if both point to the same directory.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
+        /// equal if both are null, or if both point to the same directory."TStep"
         /// </summary>
         /// <param name="expected">A directory containing the value that is expected</param>
         /// <param name="actual">A directory containing the actual value</param>
@@ -61,8 +60,7 @@ namespace NUnit.Framework
 
         /// <summary>
         /// Verifies that two directories are equal.  Two directories are considered
-        /// equal if both are null, or if both point to the same directory.
-        /// If they are not equal an <see cref="AssertionException"/> is thrown.
+        /// equal if both are null, or if both point to the same directory."TStep"
         /// </summary>
         /// <param name="expected">A directory containing the value that is expected</param>
         /// <param name="actual">A directory containing the actual value</param>
@@ -79,8 +77,7 @@ namespace NUnit.Framework
 
         #region DirectoryInfo
         /// <summary>
-        /// Asserts that two directories are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two directories are not equal.
         /// </summary>
         /// <param name="expected">A directory containing the value that is expected</param>
         /// <param name="actual">A directory containing the actual value</param>
@@ -92,8 +89,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that two directories are not equal. If they are equal
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that two directories are not equal.
         /// </summary>
         /// <param name="expected">A directory containing the value that is expected</param>
         /// <param name="actual">A directory containing the actual value</param>
@@ -110,8 +106,7 @@ namespace NUnit.Framework
 
         #region DirectoryInfo
         /// <summary>
-        /// Asserts that the directory exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory exists.
         /// </summary>
         /// <param name="actual">A directory containing the actual value</param>
         /// <param name="message">The message to display if directories are not equal</param>
@@ -122,8 +117,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the directory exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory exists.
         /// </summary>
         /// <param name="actual">A directory containing the actual value</param>
         static public void Exists(DirectoryInfo actual)
@@ -135,8 +129,7 @@ namespace NUnit.Framework
 
         #region String
         /// <summary>
-        /// Asserts that the directory exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory exists.
         /// </summary>
         /// <param name="actual">The path to a directory containing the actual value</param>
         /// <param name="message">The message to display if directories are not equal</param>
@@ -147,8 +140,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the directory exists. If it does not exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory exists.
         /// </summary>
         /// <param name="actual">The path to a directory containing the actual value</param>
         static public void Exists(string actual)
@@ -164,8 +156,7 @@ namespace NUnit.Framework
 
         #region DirectoryInfo
         /// <summary>
-        /// Asserts that the directory does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory does not exist.
         /// </summary>
         /// <param name="actual">A directory containing the actual value</param>
         /// <param name="message">The message to display if directories are not equal</param>
@@ -176,8 +167,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the directory does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory does not exist.
         /// </summary>
         /// <param name="actual">A directory containing the actual value</param>
         static public void DoesNotExist(DirectoryInfo actual)
@@ -189,8 +179,7 @@ namespace NUnit.Framework
 
         #region String
         /// <summary>
-        /// Asserts that the directory does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory does not exist.
         /// </summary>
         /// <param name="actual">The path to a directory containing the actual value</param>
         /// <param name="message">The message to display if directories are not equal</param>
@@ -201,8 +190,7 @@ namespace NUnit.Framework
         }
 
         /// <summary>
-        /// Asserts that the directory does not exist. If it does exist
-        /// an <see cref="AssertionException"/> is thrown.
+        /// Asserts that the directory does not exist.
         /// </summary>
         /// <param name="actual">The path to a directory containing the actual value</param>
         static public void DoesNotExist(string actual)

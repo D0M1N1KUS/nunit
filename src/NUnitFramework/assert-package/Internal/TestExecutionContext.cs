@@ -1,18 +1,13 @@
 // Copyright (c) Charlie Poole, Rob Prouse and Contributors. MIT License - see LICENSE.txt
 
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
-using System.Reflection;
 using System.Security;
-using System.Security.Principal;
 using System.Threading;
 using NUnit.Compatibility;
 using NUnit.Framework.Constraints;
 using NUnit.Framework.Interfaces;
-using NUnit.Framework.Internal.Execution;
 
 #if NETFRAMEWORK
 using System.Runtime.Remoting.Messaging;
@@ -54,11 +49,6 @@ namespace NUnit.Framework.Internal
         /// </summary>
         private int _assertCount;
 
-        /// <summary>
-        /// The current test result
-        /// </summary>
-        private TestResult _currentResult;
-
         private SandboxedThreadState _sandboxedThreadState;
 
 #endregion
@@ -85,8 +75,7 @@ namespace NUnit.Framework.Internal
         public TestExecutionContext(TestExecutionContext other)
         {
             _priorContext = other;
-            
-            CurrentResult = other.CurrentResult;
+
             _listener = other._listener;
 
             _sandboxedThreadState = other._sandboxedThreadState;
@@ -159,52 +148,12 @@ namespace NUnit.Framework.Internal
 
 #region Properties
 
-        /// <summary>
-        /// The time the current test started in Ticks
-        /// </summary>
-        public long StartTicks { get; set; }
-
-        /// <summary>
-        /// Gets the elapsed time for running the test in seconds
-        /// </summary>
-        public double Duration
-        {
-            get
-            {
-                var tickCount = Stopwatch.GetTimestamp() - StartTicks;
-                return (double)tickCount / Stopwatch.Frequency;
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the current test result
-        /// </summary>
-        public TestResult CurrentResult
-        {
-            get { return _currentResult; }
-            set
-            {
-                _currentResult = value;
-                if (value != null)
-                    OutWriter = value.OutWriter;
-            }
-        }
-
-        /// <summary>
+/// <summary>
         /// Gets a TextWriter that will send output to the current test result.
         /// </summary>
         public TextWriter OutWriter { get; private set; }
 
-        /// <summary>
-        /// The current test event listener
-        /// </summary>
-        internal ITestListener Listener
-        {
-            get { return _listener; }
-            set { _listener = value; }
-        }
-
-        /// <summary>
+/// <summary>
         /// Default tolerance value used for floating point equality
         /// when no other tolerance is specified.
         /// </summary>
@@ -277,6 +226,61 @@ namespace NUnit.Framework.Internal
                 Interlocked.Increment(ref _assertCount);
         }
         
+        #endregion
+        
+        #region Nested IsolatedContext Class
+
+        /// <summary>
+        /// An IsolatedContext is used when running code
+        /// that may effect the current result in ways that
+        /// should not impact the final result of the test.
+        /// A new TestExecutionContext is created with an
+        /// initially clear result, which is discarded on
+        /// exiting the context.
+        /// </summary>
+        /// <example>
+        ///     using (new TestExecutionContext.IsolatedContext())
+        ///     {
+        ///         // Code that should not impact the result
+        ///     }
+        /// </example>
+        public class IsolatedContext : IDisposable
+        {
+            private readonly TestExecutionContext _originalContext;
+
+            /// <summary>
+            /// Save the original current TestExecutionContext and
+            /// make a new isolated context current.
+            /// </summary>
+            public IsolatedContext()
+            {
+                _originalContext = CurrentContext;
+                CurrentContext = new TestExecutionContext(_originalContext);
+            }
+
+            /// <summary>
+            /// Restore the original TestExecutionContext.
+            /// </summary>
+            public void Dispose()
+            {
+                // _originalContext.OutWriter.Write(CurrentContext.Output);
+                CurrentContext = _originalContext;
+            }
+        }
+
+        #endregion
+        
+        #region Nested AdhocTestExecutionContext
+
+        /// <summary>
+        /// An AdhocTestExecutionContext is created whenever a context is needed
+        /// but not available in CurrentContext. This happens when tests are run
+        /// on an ad-hoc basis or Asserts are used outside of tests.
+        /// </summary>
+        public class AdhocContext : TestExecutionContext
+        {
+        }
+
         #endregion
     }
 }

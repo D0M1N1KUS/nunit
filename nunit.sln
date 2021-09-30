@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nunit.assert-package", "src\NUnitFramework\assert-package\nunit.assert-package.csproj", "{58E12D7F-DE9E-4918-8994-39C488A4F0BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssertPackageTests", "AssertPackageTests\AssertPackageTests.csproj", "{D4675A7B-4360-4181-A9D1-71308CD4382B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{58E12D7F-DE9E-4918-8994-39C488A4F0BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58E12D7F-DE9E-4918-8994-39C488A4F0BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58E12D7F-DE9E-4918-8994-39C488A4F0BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4675A7B-4360-4181-A9D1-71308CD4382B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4675A7B-4360-4181-A9D1-71308CD4382B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4675A7B-4360-4181-A9D1-71308CD4382B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4675A7B-4360-4181-A9D1-71308CD4382B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
