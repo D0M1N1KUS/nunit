@@ -132,13 +132,8 @@ namespace NUnit.AssertPackage.Constraints
         {
             if (val == null)
                 return Fmt_Null;
-
-            var context = TestExecutionContext.CurrentContext;
-
-            if (context != null)
-                return context.CurrentValueFormatter(val);
-            else
-                return DefaultValueFormatter(val);
+            
+            return DefaultValueFormatter(val);
         }
 
         /// <summary>

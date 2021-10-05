@@ -75,7 +75,7 @@ namespace NUnit.AssertPackage
                 message = string.Format(message, args);
 
             // If we are in a multiple assert block, this is an error
-            if (TestExecutionContext.CurrentContext.MultipleAssertLevel > 0)
+            if (MultipleAssertLevel > 0)
                 throw new Exception("Assert.Pass may not be used in a multiple assertion block.");
         }
 
@@ -178,7 +178,7 @@ namespace NUnit.AssertPackage
                 message = string.Format(message, args);
 
             // If we are in a multiple assert block, this is an error
-            if (TestExecutionContext.CurrentContext.MultipleAssertLevel > 0)
+            if (MultipleAssertLevel > 0)
                 throw new Exception("Assert.Ignore may not be used in a multiple assertion block.");
         }
 
@@ -215,7 +215,7 @@ namespace NUnit.AssertPackage
                 message = string.Format(message, args);
 
             // If we are in a multiple assert block, this is an error
-            if (TestExecutionContext.CurrentContext.MultipleAssertLevel > 0)
+            if (MultipleAssertLevel > 0)
                 throw new Exception("Assert.Inconclusive may not be used in a multiple assertion block.");
         }
 
@@ -276,23 +276,22 @@ namespace NUnit.AssertPackage
         /// <param name="testDelegate">A TestDelegate to be executed in Multiple Assertion mode.</param>
         public static void Multiple(TestDelegate testDelegate)
         {
-            TestExecutionContext context = TestExecutionContext.CurrentContext;
-            Guard.OperationValid(context != null, "There is no current test execution context.");
+            MultipleAssertLevel++;
 
-            if (context != null)
+            try
             {
-                context.MultipleAssertLevel++;
-
-                try
-                {
-                    testDelegate();
-                }
-                finally
-                {
-                    context.MultipleAssertLevel--;
-                }
+                testDelegate();
+            }
+            finally
+            {
+                MultipleAssertLevel--;
             }
         }
+
+        /// <summary>
+        /// Gets or sets the multi-assert level. Replaces the original TestExecutionContext.MultipleAssertLevel.
+        /// </summary>
+        internal static int MultipleAssertLevel { get; set; }
 
         /// <summary>
         /// Wraps code containing a series of assertions, which should all
@@ -302,21 +301,15 @@ namespace NUnit.AssertPackage
         /// <param name="testDelegate">A TestDelegate to be executed in Multiple Assertion mode.</param>
         public static void Multiple(AsyncTestDelegate testDelegate)
         {
-            TestExecutionContext context = TestExecutionContext.CurrentContext;
-            Guard.OperationValid(context != null, "There is no current test execution context.");
+            MultipleAssertLevel++;
 
-            if (context != null)
+            try
             {
-                context.MultipleAssertLevel++;
-
-                try
-                {
-                    AsyncToSyncAdapter.Await(testDelegate.Invoke);
-                }
-                finally
-                {
-                    context.MultipleAssertLevel--;
-                }
+                AsyncToSyncAdapter.Await(testDelegate.Invoke);
+            }
+            finally
+            {
+                MultipleAssertLevel--;
             }
         }
 
@@ -366,11 +359,6 @@ namespace NUnit.AssertPackage
             }
         }
 
-        private static void IncrementAssertCount()
-        {
-            TestExecutionContext.CurrentContext.IncrementAssertCount();
-        }
-
-#endregion
+        #endregion
     }
 }

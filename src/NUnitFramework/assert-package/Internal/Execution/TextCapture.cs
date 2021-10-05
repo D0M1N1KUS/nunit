@@ -40,12 +40,7 @@ namespace NUnit.AssertPackage.Internal.Execution
         /// <param name="value">The char to write</param>
         public override void Write(char value)
         {
-            var context = TestExecutionContext.CurrentContext;
-
-            if (context != null && context.OutWriter != null)
-                context.OutWriter.Write(value);
-            else
-                _defaultWriter.Write(value);
+            _defaultWriter.Write(value);
         }
 
         /// <summary>
@@ -54,12 +49,7 @@ namespace NUnit.AssertPackage.Internal.Execution
         /// <param name="value">The string to write</param>
         public override void Write(string value)
         {
-            var context = TestExecutionContext.CurrentContext;
-
-            if (context != null && context.OutWriter != null)
-                context.OutWriter.Write(value);
-            else
-                _defaultWriter.Write(value);
+            _defaultWriter.Write(value);
         }
 
         /// <summary>
@@ -68,12 +58,7 @@ namespace NUnit.AssertPackage.Internal.Execution
         /// <param name="value">The string to write</param>
         public override void WriteLine(string value)
         {
-            var context = TestExecutionContext.CurrentContext;
-
-            if (context != null && context.OutWriter != null)
-                context.OutWriter.WriteLine(value);
-            else
-                _defaultWriter.WriteLine(value);
+            _defaultWriter.WriteLine(value);
         }
     }
 }

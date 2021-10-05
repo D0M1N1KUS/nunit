@@ -155,9 +155,7 @@ namespace NUnit.AssertPackage.Constraints
 
             if (tolerance.IsUnsetOrDefault)
             {
-                var temp = TestExecutionContext.CurrentContext?.DefaultFloatingPointTolerance;
-                if (temp != null && !temp.IsUnsetOrDefault)
-                    tolerance = temp;
+                //TODO: TextExecutionContext dependency removed
             }
 
             switch (tolerance.Mode)
@@ -199,9 +197,7 @@ namespace NUnit.AssertPackage.Constraints
 
             if (tolerance.IsUnsetOrDefault)
             {
-                var temp = TestExecutionContext.CurrentContext?.DefaultFloatingPointTolerance;
-                if (temp != null && !temp.IsUnsetOrDefault)
-                    tolerance = temp;
+                //TODO: TextExecutionContext dependency removed
             }
 
 

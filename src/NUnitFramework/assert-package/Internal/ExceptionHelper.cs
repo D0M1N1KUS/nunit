@@ -155,30 +155,27 @@ namespace NUnit.AssertPackage.Internal
                 parameterName);
 
             Guard.ArgumentNotAsyncVoid(parameterlessDelegate, parameterName);
-
-            using (new TestExecutionContext.IsolatedContext())
+            
+            if (AsyncToSyncAdapter.IsAsyncOperation(parameterlessDelegate))
             {
-                if (AsyncToSyncAdapter.IsAsyncOperation(parameterlessDelegate))
+                try
                 {
-                    try
-                    {
-                        AsyncToSyncAdapter.Await(parameterlessDelegate.DynamicInvokeWithTransparentExceptions);
-                    }
-                    catch (Exception ex)
-                    {
-                        return ex;
-                    }
+                    AsyncToSyncAdapter.Await(parameterlessDelegate.DynamicInvokeWithTransparentExceptions);
                 }
-                else
+                catch (Exception ex)
                 {
-                    try
-                    {
-                        parameterlessDelegate.DynamicInvokeWithTransparentExceptions();
-                    }
-                    catch (Exception ex)
-                    {
-                        return ex;
-                    }
+                    return ex;
+                }
+            }
+            else
+            {
+                try
+                {
+                    parameterlessDelegate.DynamicInvokeWithTransparentExceptions();
+                }
+                catch (Exception ex)
+                {
+                    return ex;
                 }
             }
 

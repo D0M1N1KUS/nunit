@@ -225,7 +225,7 @@ namespace NUnit.AssertPackage
 
         private static void CheckMultipleAssertLevel()
         {
-            if (TestExecutionContext.CurrentContext.MultipleAssertLevel > 0)
+            if (Assert.MultipleAssertLevel > 0) // Wacky fix but oh well.
                 throw new Exception("Assume.That may not be used in a multiple assertion block.");
         }
 

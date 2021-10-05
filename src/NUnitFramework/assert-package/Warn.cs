@@ -77,7 +77,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = expr.Resolve();
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(del);
 
             if (!result.IsSuccess)
@@ -106,7 +105,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = expr.Resolve();
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(del);
 
             if (!result.IsSuccess)
@@ -225,7 +223,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = expression.Resolve();
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(actual);
 
             if (!result.IsSuccess)
@@ -247,7 +244,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = expression.Resolve();
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(actual);
 
             if (!result.IsSuccess)
@@ -287,7 +283,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = new NotConstraint(expr.Resolve());
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(del);
 
             if (!result.IsSuccess)
@@ -316,7 +311,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = new NotConstraint(expr.Resolve());
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(del);
 
             if (!result.IsSuccess)
@@ -420,7 +414,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = new NotConstraint(expression.Resolve());
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(actual);
 
             if (!result.IsSuccess)
@@ -442,7 +435,6 @@ namespace NUnit.AssertPackage
         {
             var constraint = new NotConstraint(expression.Resolve());
 
-            IncrementAssertCount();
             var result = constraint.ApplyTo(actual);
 
             if (!result.IsSuccess)
@@ -454,11 +446,6 @@ namespace NUnit.AssertPackage
         #endregion
 
         #region Helper Methods
-
-        private static void IncrementAssertCount()
-        {
-            TestExecutionContext.CurrentContext.IncrementAssertCount();
-        }
 
         #endregion
     }

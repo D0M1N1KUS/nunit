@@ -26,16 +26,13 @@ namespace NUnit.AssertPackage
             // Since TestDelegate returns void, it’s always async void if it’s async at all.
             Guard.ArgumentNotAsyncVoid(code, nameof(code));
 
-            using (new TestExecutionContext.IsolatedContext())
+            try
             {
-                try
-                {
-                    code();
-                }
-                catch (Exception ex)
-                {
-                    caughtException = ex;
-                }
+                code();
+            }
+            catch (Exception ex)
+            {
+                caughtException = ex;
             }
 
             AssertPackage.Assert.That(caughtException, expression, message, args);

@@ -107,8 +107,7 @@ namespace NUnit.AssertPackage
         public static void That<TActual>(ActualValueDelegate<TActual> del, IResolveConstraint expr, string? message, params object?[]? args)
         {
             var constraint = expr.Resolve();
-
-            IncrementAssertCount();
+            
             var result = constraint.ApplyTo(del);
             if (!result.IsSuccess)
                 ReportFailure(result, message, args);
@@ -127,8 +126,7 @@ namespace NUnit.AssertPackage
             Func<string?> getExceptionMessage)
         {
             var constraint = expr.Resolve();
-
-            IncrementAssertCount();
+            
             var result = constraint.ApplyTo(del);
             if (!result.IsSuccess)
                 ReportFailure(result, getExceptionMessage());
@@ -201,8 +199,7 @@ namespace NUnit.AssertPackage
         public static void That<TActual>(TActual actual, IResolveConstraint expression, string? message, params object?[]? args)
         {
             var constraint = expression.Resolve();
-
-            IncrementAssertCount();
+            
             var result = constraint.ApplyTo(actual);
             if (!result.IsSuccess)
                 ReportFailure(result, message, args);
@@ -222,8 +219,7 @@ namespace NUnit.AssertPackage
             Func<string?> getExceptionMessage)
         {
             var constraint = expression.Resolve();
-
-            IncrementAssertCount();
+            
             var result = constraint.ApplyTo(actual);
             if (!result.IsSuccess)
                 ReportFailure(result, getExceptionMessage());
