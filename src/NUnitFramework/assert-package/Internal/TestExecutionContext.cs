@@ -33,11 +33,6 @@ namespace NUnit.AssertPackage.Internal
         #region Instance Fields
 
         /// <summary>
-        /// Link to a prior saved context
-        /// </summary>
-        private readonly TestExecutionContext _priorContext;
-
-        /// <summary>
         /// The event listener currently receiving notifications
         /// </summary>
         private ITestListener _listener = TestListener.NULL;
@@ -58,8 +53,6 @@ namespace NUnit.AssertPackage.Internal
         /// </summary>
         public TestExecutionContext()
         {
-            _priorContext = null;
-
             UpdateContextFromEnvironment();
 
             CurrentValueFormatter = (val) => MsgUtils.DefaultValueFormatter(val);
@@ -72,8 +65,6 @@ namespace NUnit.AssertPackage.Internal
         /// <param name="other">An existing instance of TestExecutionContext.</param>
         public TestExecutionContext(TestExecutionContext other)
         {
-            _priorContext = other;
-
             _listener = other._listener;
 
             _sandboxedThreadState = other._sandboxedThreadState;
@@ -157,16 +148,7 @@ namespace NUnit.AssertPackage.Internal
         /// </summary>
         public Tolerance DefaultFloatingPointTolerance { get; set; }
 
-        /// <summary>
-        /// Gets the assert count.
-        /// </summary>
-        /// <value>The assert count.</value>
-        internal int AssertCount
-        {
-            get { return _assertCount; }
-        }
-
-        /// <summary>
+/// <summary>
         /// The current nesting level of multiple assert blocks
         /// </summary>
         internal int MultipleAssertLevel { get; set; }
@@ -191,22 +173,6 @@ namespace NUnit.AssertPackage.Internal
         }
 
         /// <summary>
-        /// Set up the execution environment to match a context.
-        /// Note that we may be running on the same thread where the
-        /// context was initially created or on a different thread.
-        /// </summary>
-        [SecuritySafeCritical] // This gives partial trust code the ability to capture an existing
-                               // SynchronizationContext.Current and restore it at any time.
-                               // This simply unblocks us on .NET Framework and is not in the spirit
-                               // of partial trust. If we choose to make partial trust a design priority,
-                               // we’ll need to thoroughly review more than just this instance.
-        public void EstablishExecutionEnvironment()
-        {
-            _sandboxedThreadState.Restore();
-            CurrentContext = this;
-        }
-
-        /// <summary>
         /// Increments the assert count by one.
         /// </summary>
         public void IncrementAssertCount()
@@ -214,16 +180,6 @@ namespace NUnit.AssertPackage.Internal
             Interlocked.Increment(ref _assertCount);
         }
 
-        /// <summary>
-        /// Increments the assert count by a specified amount.
-        /// </summary>
-        public void IncrementAssertCount(int count)
-        {
-            // TODO: Temporary implementation
-            while (count-- > 0)
-                Interlocked.Increment(ref _assertCount);
-        }
-        
         #endregion
         
         #region Nested IsolatedContext Class
